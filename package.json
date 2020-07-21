@@ -1,0 +1,40 @@
+{
+  "name": "koa2-weibo-code",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon --inspect=9229 bin/www",
+    "prd": "cross-env NODE_ENV=production pm2 start bin/www",
+    "test": "cross-env NODE_ENV=test jest --runInBand --forceExit --colors"
+  },
+  "dependencies": {
+    "ajv": "^6.12.2",
+    "date-fns": "^2.13.0",
+    "debug": "^4.1.1",
+    "ejs": "~2.3.3",
+    "formidable-upload-koa": "^1.0.1",
+    "fs-extra": "^9.0.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-generic-session": "^2.0.4",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-redis": "^4.0.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.8",
+    "supertest": "^4.0.2",
+    "xss": "^1.0.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.0.1",
+    "nodemon": "^1.19.1",
+    "redis": "^3.0.2"
+  }
+}
